@@ -1,0 +1,26 @@
+get http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidXNlcjEiLCJpYXQiOjE3MTM0OTA3MjAsImV4cCI6MTcxMzQ5MDc1MH0.00FoLPu5b13PwZDueP3MSebUrzv6yuxOkBqNMit1emM
+
+###
+post http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidXNlcjEiLCJpYXQiOjE3MTM0OTA2NTB9.0fwYCI0v0CcpQkGwEIzBT1hPHlkaLpLAkCkZtilY9w8"
+}
+
+###
+DELETE http://localhost:3000/logout
+Content-Type:  application/json
+{
+    "token": "asdf"
+}
+
+
+###
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "name": "user1"
+}
